@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:background="@color/white">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        android:minWidth="100dp"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/placesImageViewID"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:minWidth="75dp"
+
+
+                app:srcCompat="@drawable/ic_launcher_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical"
+
+
+                >
+
+                <TextView
+                    android:id="@+id/nameViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/historyViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Bilgi"
+
+                    android:textSize="12dp"
+
+
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/butonViewID"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_button"
+                android:fontFamily="@font/lora_bold"
+                android:text="Show on Maps"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

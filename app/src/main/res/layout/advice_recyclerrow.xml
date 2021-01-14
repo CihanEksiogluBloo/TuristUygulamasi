@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+    <TextView
+        android:id="@+id/adviceBaslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="baslik"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/adviceGorsel"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_launcher_background">
+
+        </ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/adviceText"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and
+             typesetting industry. Lorem Ipsum has been the indus
+             try's standard dummy text ever since the 1500s, when a
+             n unknown printer took a galley of type and scrambled it
+ Various versions have evolved over the years, sometimes by accid"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

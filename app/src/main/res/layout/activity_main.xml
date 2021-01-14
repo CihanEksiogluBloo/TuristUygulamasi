@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainscreen"
+
+
+    tools:context=".View.MainActivity">
+
+    <Button
+        android:id="@+id/whybutton"
+
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/lora_bold"
+        android:onClick="whyOnClick"
+        android:shadowColor="@color/black"
+        android:text="Why Turkey?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+
+        android:id="@+id/startbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/lora_bold_italic"
+        android:onClick="startOnClick"
+        android:shadowColor="@color/black"
+        android:text="Let's Start"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/whybutton"
+        app:layout_constraintStart_toStartOf="@+id/whybutton"
+        app:layout_constraintTop_toBottomOf="@+id/whybutton"
+        app:layout_constraintVertical_bias="0.065" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

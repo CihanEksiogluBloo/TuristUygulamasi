@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Travel Guide of Turkey</string>
+
+    <string name="title_activity_yonlendirme_bottom_bar">MainActivity</string>
+    <string name="title_home">Places</string>
+    <string name="title_dashboard">Food</string>
+    <string name="title_notifications">Advice</string>
+    <string name="why_turkey">Why Turkey?</string>
+
+</resources>
