@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.cihan.turistuygulamasi.Adapter.SehirSecmeAdapter
 import com.cihan.turistuygulamasi.R
 import com.cihan.turistuygulamasi.Model.sehirIslemleri
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_sehir_secme_main.*
 
 class SehirSecmeMain : AppCompatActivity() {
@@ -28,6 +29,14 @@ class SehirSecmeMain : AppCompatActivity() {
 
 
 
+
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        var database = FirebaseFirestore.getInstance()
+        database.enableNetwork()
     }
     fun sehirekle81(){
         sehirislemleri.sehirekle("Adana")

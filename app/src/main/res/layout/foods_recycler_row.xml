@@ -1,74 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="315dp"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:id="@+id/foodGlobalLayout"
 
 
     >
+
     <TextView
 
         android:id="@+id/yemekAdiID"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
-        android:text="yemek isimi"
-        android:textStyle="bold"
-        android:textSize="18sp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
+        android:text="yemek isimi"
+        android:textSize="18sp"
+        android:textStyle="bold"
 
 
         />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:orientation="horizontal"
         android:layout_gravity="top"
-        >
+        android:orientation="horizontal">
 
 
         <ImageView
-            android:layout_gravity="bottom"
             android:id="@+id/yemekGorselID"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="bottom"
             app:srcCompat="@drawable/ic_launcher_background">
 
         </ImageView>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_gravity="bottom"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal"
+
             >
+
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:orientation="vertical"
 
 
                 >
+
                 <TextView
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Information"
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
-                    android:textStyle="bold"
-
-
+                    android:text="Information"
                     android:textSize="18sp"
+
+
+                    android:textStyle="bold"
 
                     />
 
@@ -76,58 +83,74 @@
                     android:id="@+id/yemekBilgiID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="yaziler burada"
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
 
+                    android:text="buraya metin gelecek,."
 
-                    android:textSize="13sp"
 
-                    />
+                    android:textSize="13sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:orientation="vertical"
 
                 >
+
                 <TextView
-                    android:textAlignment="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Restorans"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
+                    android:text="Restorans"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
 
                     />
+
+
                 <TextView
                     android:id="@+id/yemekRestoranID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="yaziler burada"
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
+                    android:text="yaziler burada"
 
 
                     android:textSize="13sp"
 
                     />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="where?"
+                    android:layout_gravity="bottom|center"
+
+                    />
 
             </LinearLayout>
-
-
 
 
         </LinearLayout>
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/kaynakFoodID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="kaynak"
+        android:layout_margin="10dp"
+        />
 
-    </LinearLayout>
+
+</LinearLayout>
 
 
 

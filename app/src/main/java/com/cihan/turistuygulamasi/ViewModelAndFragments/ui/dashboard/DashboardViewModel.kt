@@ -14,7 +14,10 @@ class DashboardViewModel : ViewModel() {
 
     var database = FirebaseFirestore.getInstance()
 
+
+
     fun foodVerisiniAl(context: Context,collectionPathName : String) {
+        database.enableNetwork()
 
         database.collection(collectionPathName)
                 .orderBy("Yemek")
@@ -36,12 +39,14 @@ class DashboardViewModel : ViewModel() {
                                     var bilgi = document.get("Bilgi") as String
                                     var restoran = document.get("Restoran") as String
                                     var yemekadi = document.get("Yemek") as String
+                                    var kaynak = document.get("Kaynak") as String
 
                                     val verilistesi = ArrayList<Food>()
-                                    val indirilenVeri = Food(restoran,yemekadi,bilgi,gorselurl,adres)
+                                    val indirilenVeri = Food(restoran,yemekadi,bilgi,gorselurl,adres,kaynak)
                                     verilistesi.add(indirilenVeri)
                                     datalarFood.value = verilistesi
                                     foodprogressBar.value = false
+                                    database.disableNetwork()
 
                                 }
 
@@ -53,6 +58,7 @@ class DashboardViewModel : ViewModel() {
 
     }
 }
+
 
 
 

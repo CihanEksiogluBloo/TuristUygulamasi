@@ -26,7 +26,7 @@ class HomeViewModel : ViewModel() {
 
 
     fun verileriAl(context: Context,collectionPathName : String) {
-
+        database.enableNetwork()
         database.collection(collectionPathName)
             .orderBy("Mekan")
             .addSnapshotListener { snapshot, exception ->
@@ -52,6 +52,8 @@ class HomeViewModel : ViewModel() {
                                 verilistesi.add(indirilenVeri)
                                 datalar.value = verilistesi
                                 progressBar.value = false
+                                database.disableNetwork()
+
 
                             }
 
@@ -59,7 +61,9 @@ class HomeViewModel : ViewModel() {
                         }
                     }
                 }
+
             }
 
     }
+
 }

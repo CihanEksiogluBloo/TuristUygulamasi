@@ -26,6 +26,7 @@ class food_adapter(var yemeklistesi : ArrayList<Food>) : RecyclerView.Adapter<fo
         holder.itemView.yemekAdiID.text = yemeklistesi[position].yemekIsmi
         holder.itemView.yemekBilgiID.text = yemeklistesi[position].Bilgi
         holder.itemView.yemekRestoranID.text = yemeklistesi[position].restoran
+        holder.itemView.kaynakFoodID.text = yemeklistesi[position].kaynak
         Picasso.get().load(yemeklistesi[position].resimUrl).into(holder.itemView.yemekGorselID)
     }
 

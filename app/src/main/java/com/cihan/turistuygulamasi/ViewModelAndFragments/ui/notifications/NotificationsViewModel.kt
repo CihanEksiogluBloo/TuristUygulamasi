@@ -15,7 +15,7 @@ class NotificationsViewModel : ViewModel() {
 
 
     fun adviceVerileriAl(context: Context,collectionPathName : String) {
-
+        database.enableNetwork()
         database.collection(collectionPathName)
                 .orderBy("Advices")
                 .addSnapshotListener { snapshot, exception ->
@@ -37,6 +37,7 @@ class NotificationsViewModel : ViewModel() {
                                     verilistesi.add(indirilenVeri)
                                     datalar.value = verilistesi
                                     progressBar.value = false
+                                    database.disableNetwork()
 
                                 }
 
