@@ -9,22 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TuristUygulamasi">
-        <activity android:name=".View.why_turkey"></activity>
-
+        <activity android:name=".View.show_food"></activity>
+        <activity android:name=".View.why_turkey" />
         <activity android:name=".View.show_places" />
         <activity
             android:name=".View.yonlendirmeBottomBar"
             android:label="@string/title_activity_yonlendirme_bottom_bar" />
-        <activity android:name=".View.TanitimActivity"></activity>
-        <activity android:name=".View.SehirSecmeMain"></activity>
+        <activity android:name=".View.TanitimActivity" />
+        <activity android:name=".View.SehirSecmeMain" />
         <activity android:name=".View.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
 
         <meta-data

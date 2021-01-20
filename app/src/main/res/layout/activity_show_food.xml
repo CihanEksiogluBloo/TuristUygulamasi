@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.show_food"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/showFoodImageID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/showFoodHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/showFoodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+
+
+        android:text="TextView dasffkasl asfifaslşfasişfasşlk" />
+    <TextView
+        android:id="@+id/showFoodSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+
+
+        android:text="Sources" />
+
+    <TextView
+        android:id="@+id/showFoodHeader2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+
+        android:text="Restoran" />
+    <TextView
+        android:id="@+id/showFoodRestoran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+
+
+        android:text="Restoran Datas" />
+    <Button
+        android:id="@+id/showFoodButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Where?"
+        />
+
+</LinearLayout>

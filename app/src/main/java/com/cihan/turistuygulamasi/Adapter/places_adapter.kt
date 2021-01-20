@@ -33,18 +33,12 @@ class places_adapter(val verilistesi : ArrayList<Place>): RecyclerView.Adapter<p
             val context= holder.itemView.context
 
             val gmmIntentUri = Uri.parse(verilistesi.get(position).adres)
-
-
-
-
             val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
-
             mapIntent.setPackage("com.google.android.apps.maps")
-
             context.startActivity(mapIntent)
 
         }
-        holder.itemView.placesImageViewID.setOnClickListener {
+        holder.itemView.placesGlobalLayout.setOnClickListener {
             val context = holder.itemView.context
             val intent = Intent(context,show_places::class.java)
             intent.putExtra("gorselValue",verilistesi[position].gorselUrl)
