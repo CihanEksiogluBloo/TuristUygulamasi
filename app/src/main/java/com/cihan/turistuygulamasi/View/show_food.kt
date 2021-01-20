@@ -39,13 +39,22 @@ class show_food : AppCompatActivity() {
         showFoodRestoran.text = restoranSF
 
 
+        if(adresSF == "NoGeo"){
+            showFoodButtonID.setBackgroundColor(Color.GRAY)
+            showFoodButtonID.text = "No Restoran"
+            showFoodRestoran.text = "TR: Eğer Bu yemeği temsil eden restoran olmak istiyorsanız, \n iletişime geçin: BlooApplication@gmail.com\n " +
+                    "\n ENG: If you want to be the restaurant that represents this dish, \n contact us: BlooApplication@gmail.com"
+
+
+        }else{
+
 
         showFoodButtonID.setOnClickListener {
             val gmmIntentUri = Uri.parse(adresSF)
             val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
             mapIntent.setPackage("com.google.android.apps.maps")
             it.context.startActivity(mapIntent)
-        }
+        }}
 
     }
 }
