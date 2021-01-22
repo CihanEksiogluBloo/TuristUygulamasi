@@ -4,7 +4,7 @@ My first application's Alpha Version.
 - MVVM architecture
 - Picasso
 - Navigation
-- Firebase (but no json file because security)
+- Firebase (but no access file because security)
 - BottomBar
 - RecyclerView
 
