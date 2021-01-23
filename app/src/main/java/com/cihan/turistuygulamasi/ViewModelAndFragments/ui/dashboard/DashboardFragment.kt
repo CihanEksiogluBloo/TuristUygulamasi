@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -19,7 +20,7 @@ import kotlinx.android.synthetic.main.fragment_dashboard.*
 
 
 class DashboardFragment : Fragment() {
-
+    var o = 0
     private lateinit var dashboardViewModel: DashboardViewModel
     private var foodRecyclerAdapter = food_adapter(arrayListOf())
     private val viewModel by activityViewModels<yonlendirmeViewModel>()
@@ -29,9 +30,13 @@ class DashboardFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
+
+            Toast.makeText(context,"Click on Food For More Details", Toast.LENGTH_SHORT).show()
+
         val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
         return root
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         dashboardViewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
@@ -43,6 +48,7 @@ class DashboardFragment : Fragment() {
         foodRWid.adapter = foodRecyclerAdapter
         observeLiveDataF()
         dataShow()
+
 
 
 
