@@ -19,11 +19,10 @@ class SehirSecmeMain : AppCompatActivity() {
 
 
         sehirekle81()
-        val sehirPlakaListesi = sehirislemleri.sehirplakaListe
         val sehirIsimListesi = sehirislemleri.sehirIsimleriListe.sortedBy { it}
         var layoutManager = LinearLayoutManager(this)
         recyclerViewID.layoutManager = layoutManager
-        recyclerviewAdater = SehirSecmeAdapter(sehirIsimListesi,sehirPlakaListesi)
+        recyclerviewAdater = SehirSecmeAdapter(sehirIsimListesi)
         recyclerViewID.adapter = recyclerviewAdater
 
 

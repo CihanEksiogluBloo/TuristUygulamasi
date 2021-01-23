@@ -1,6 +1,7 @@
 package com.cihan.turistuygulamasi.Adapter
 
 import android.content.Intent
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +11,7 @@ import com.cihan.turistuygulamasi.View.yonlendirmeBottomBar
 import kotlinx.android.synthetic.main.recycler_row.view.*
 
 
-class SehirSecmeAdapter(val sehirIsimListesi : List<String>,val sehirPlakaListesi : ArrayList<Int>): RecyclerView.Adapter<SehirSecmeAdapter.VH>() {
+class SehirSecmeAdapter(val sehirIsimListesi : List<String>): RecyclerView.Adapter<SehirSecmeAdapter.VH>() {
     class VH(itemViewz : View) : RecyclerView.ViewHolder(itemViewz) {
     }
 
@@ -23,7 +24,6 @@ class SehirSecmeAdapter(val sehirIsimListesi : List<String>,val sehirPlakaListes
 
     override fun onBindViewHolder(holder: VH, position: Int) {
         holder.itemView.ilAdiID.text = sehirIsimListesi[position]
-        holder.itemView.ilPlakaID.text = sehirPlakaListesi[position].toString()
         holder.itemView.setOnClickListener{
             var intent = Intent(holder.itemView.context, yonlendirmeBottomBar::class.java)
             intent.putExtra("province", sehirIsimListesi[position])
@@ -31,6 +31,7 @@ class SehirSecmeAdapter(val sehirIsimListesi : List<String>,val sehirPlakaListes
 
 
         }
+
 
     }
 

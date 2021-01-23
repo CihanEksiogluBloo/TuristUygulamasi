@@ -5,37 +5,24 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:gravity="center"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+
     >
-    <TextView
-        android:id="@+id/ilPlakaID"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="82"
-        android:textSize="20sp"
-        android:layout_weight="5"
-        android:width="0dp"
-        />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_weight="35"
-        >
 
         <TextView
             android:id="@+id/ilAdiID"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="il adi"
-            android:textSize="20sp"
-            android:layout_margin="10dp"
-
+            android:layout_margin="5dp"
+            android:background="@drawable/province"
             android:gravity="center"
 
-            />
+            android:padding="5dp"
+            android:text="il adi"
+            android:textColor="@color/white"
 
-    </LinearLayout>
+            android:textSize="22sp" />
+
+
 </LinearLayout>
