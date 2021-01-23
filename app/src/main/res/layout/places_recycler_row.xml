@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
                 android:layout_gravity="center"
-                android:minWidth="75dp"
+                android:minWidth="120dp"
 
 
                 app:srcCompat="@drawable/ic_launcher_background" />
