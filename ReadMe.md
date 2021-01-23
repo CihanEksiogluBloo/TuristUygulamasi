@@ -9,4 +9,6 @@ My first application's Alpha Version.
 - RecyclerView
 
 Beta Version will be able to access on Google Play Store And Apple Store
+
+Alpha Version
 ![alt text](https://github.com/CihanEksiogluBloo/TuristUygulamasi/blob/main/örnek.jpg?raw=true)
