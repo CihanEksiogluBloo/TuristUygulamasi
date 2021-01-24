@@ -1,19 +1,17 @@
 package com.cihan.turistuygulamasi.Adapter
 
 import android.content.Intent
+import android.graphics.Color
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.cihan.turistuygulamasi.Model.Food
-import com.cihan.turistuygulamasi.Model.Place
 import com.cihan.turistuygulamasi.R
 import com.cihan.turistuygulamasi.View.show_food
-import com.cihan.turistuygulamasi.View.show_places
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.foods_recycler_row.view.*
-import kotlinx.android.synthetic.main.places_recycler_row.view.*
 
 class food_adapter(var yemeklistesi : ArrayList<Food>) : RecyclerView.Adapter<food_adapter.foodadapter>() {
     class foodadapter(viewz : View) : RecyclerView.ViewHolder(viewz) {
@@ -29,10 +27,17 @@ class food_adapter(var yemeklistesi : ArrayList<Food>) : RecyclerView.Adapter<fo
     override fun onBindViewHolder(holder: foodadapter, position: Int) {
         holder.itemView.yemekAdiID.text = yemeklistesi[position].yemekIsmi
         holder.itemView.yemekBilgiID.text = yemeklistesi[position].Bilgi
-        holder.itemView.yemekRestoranID.text = yemeklistesi[position].restoran
+        holder.itemView.foodRestoranTextID.text = yemeklistesi[position].restoran
         holder.itemView.kaynakFoodID.text = yemeklistesi[position].kaynak
         Picasso.get().load(yemeklistesi[position].resimUrl).into(holder.itemView.yemekGorselID)
 
+        if(yemeklistesi[position].adres == "NoGeo"){
+            holder.itemView.foodRCButtonID.setBackgroundColor(Color.GRAY)
+            holder.itemView.foodRCButtonID.text = "No Restoran"
+            holder.itemView.foodRestoranTextID.text = "iletişime geçin / contact us:\n BlooApplication@gmail.com "
+
+
+        }else{
         holder.itemView.foodRCButtonID.setOnClickListener{
 
             val context= holder.itemView.context
@@ -40,7 +45,7 @@ class food_adapter(var yemeklistesi : ArrayList<Food>) : RecyclerView.Adapter<fo
             val gmmIntentUri = Uri.parse(yemeklistesi.get(position).adres)
             val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
             mapIntent.setPackage("com.google.android.apps.maps")
-            context.startActivity(mapIntent)
+            context.startActivity(mapIntent)}
 
         }
 
