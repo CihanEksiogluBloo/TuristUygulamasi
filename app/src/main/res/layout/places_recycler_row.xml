@@ -13,13 +13,14 @@
 
     <LinearLayout
 
+        android:id="@+id/prrid"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_margin="5dp"
         android:minWidth="100dp"
-        android:orientation="horizontal"
 
-        >
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -37,7 +38,8 @@
                 android:minWidth="120dp"
 
 
-                app:srcCompat="@drawable/ic_launcher_background" />
+                app:srcCompat="@drawable/ic_launcher_background"
+                android:contentDescription="@string/todo" />
         </LinearLayout>
 
         <LinearLayout
@@ -51,7 +53,7 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
                 android:gravity="center"
@@ -65,8 +67,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Name"
-                    android:textSize="16dp"
+                    android:text="@string/name"
+                    android:textSize="16sp"
                     android:textStyle="bold"
 
 
@@ -77,9 +79,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Bilgi"
+                    android:text="@string/bilgi"
 
-                    android:textSize="12dp"
+                    android:textSize="12sp"
 
 
                     />
@@ -94,7 +96,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/bg_button"
                 android:fontFamily="@font/lora_bold"
-                android:text="Show on Maps"
+                android:text="@string/show_on_maps"
                 android:textColor="@color/white"
                 android:textSize="11sp" />
 

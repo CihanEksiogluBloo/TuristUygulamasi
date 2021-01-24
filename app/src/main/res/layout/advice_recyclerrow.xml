@@ -31,7 +31,8 @@
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_launcher_background">
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:contentDescription="TODO">
 
         </ImageView>
 
@@ -51,12 +52,7 @@
             android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="What is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and
-             typesetting industry. Lorem Ipsum has been the indus
-             try's standard dummy text ever since the 1500s, when a
-             n unknown printer took a galley of type and scrambled it
- Various versions have evolved over the years, sometimes by accid"
+            android:text="@string/what_is_lorem_ipsum_lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_indus_try_s_standard_dummy_text_ever_since_the_1500s_when_a_n_unknown_printer_took_a_galley_of_type_and_scrambled_it_various_versions_have_evolved_over_the_years_sometimes_by_accid"
             />
 
 

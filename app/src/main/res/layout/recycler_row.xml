@@ -19,7 +19,7 @@
             android:gravity="center"
 
             android:padding="5dp"
-            android:text="il adi"
+            android:text="@string/il_adi"
             android:textColor="@color/white"
 
             android:textSize="22sp" />

@@ -16,7 +16,7 @@
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
-        android:text="yemek isimi"
+        android:text="@string/yemek_isimi"
         android:textSize="18sp"
         android:textStyle="bold"
 
@@ -35,7 +35,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="bottom"
-            app:srcCompat="@drawable/ic_launcher_background">
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:contentDescription="@string/todo2">
 
         </ImageView>
 
@@ -45,15 +46,16 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_gravity="bottom"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal"
 
-            >
+            android:baselineAligned="false">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -71,7 +73,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
-                    android:text="Information"
+                    android:text="@string/information"
                     android:textSize="18sp"
 
 
@@ -86,7 +88,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
 
-                    android:text="buraya metin gelecek,."
+                    android:text="@string/buraya_metin_gelecek"
 
 
                     android:textSize="13sp" />
@@ -106,7 +108,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
-                    android:text="Restorans"
+                    android:text="@string/restorans"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -120,7 +122,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
-                    android:text="yaziler burada"
+                    android:text="@string/yaziler_burada"
 
 
                     android:textSize="13sp"
@@ -130,7 +132,7 @@
                     android:id="@+id/foodRCButtonID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="where?"
+                    android:text="@string/where"
                     android:layout_gravity="bottom|center"
 
                     />
@@ -146,7 +148,7 @@
         android:id="@+id/kaynakFoodID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="kaynak"
+        android:text="@string/kaynak"
         android:layout_margin="10dp"
         />
 

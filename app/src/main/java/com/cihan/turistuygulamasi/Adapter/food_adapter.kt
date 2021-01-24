@@ -34,7 +34,7 @@ class food_adapter(var yemeklistesi : ArrayList<Food>) : RecyclerView.Adapter<fo
         if(yemeklistesi[position].adres == "NoGeo"){
             holder.itemView.foodRCButtonID.setBackgroundColor(Color.GRAY)
             holder.itemView.foodRCButtonID.text = "No Restoran"
-            holder.itemView.foodRestoranTextID.text = "iletişime geçin / contact us:\n BlooApplication@gmail.com "
+            holder.itemView.foodRestoranTextID.text = " for representation \n iletişime geçin / contact us:\n BlooApplication@gmail.com "
 
 
         }else{

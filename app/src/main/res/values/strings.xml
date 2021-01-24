@@ -6,5 +6,19 @@
     <string name="title_dashboard">Food</string>
     <string name="title_notifications">Advice</string>
     <string name="why_turkey">Why Turkey?</string>
+    <string name="il_adi">il adi</string>
+    <string name="name">Name</string>
+    <string name="bilgi">Bilgi</string>
+    <string name="show_on_maps">Show on Maps</string>
+    <string name="todo">TODO</string>
+    <string name="kaynak">kaynak</string>
+    <string name="yemek_isimi">yemek isimi</string>
+    <string name="information">Information</string>
+    <string name="buraya_metin_gelecek">buraya metin gelecek,.</string>
+    <string name="restorans">Restorans</string>
+    <string name="yaziler_burada">yaziler burada</string>
+    <string name="where">where?</string>
+    <string name="todo2">TODO</string>
+    <string name="what_is_lorem_ipsum_lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_indus_try_s_standard_dummy_text_ever_since_the_1500s_when_a_n_unknown_printer_took_a_galley_of_type_and_scrambled_it_various_versions_have_evolved_over_the_years_sometimes_by_accid">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus try\'s standard dummy text ever since the 1500s, when a n unknown printer took a galley of type and scrambled it Various versions have evolved over the years, sometimes by accid</string>
 
 </resources>
