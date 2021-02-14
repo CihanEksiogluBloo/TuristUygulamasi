@@ -4,17 +4,20 @@ import android.content.Intent
 import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.cihan.turistuygulamasi.Model.darkbackground
 import com.cihan.turistuygulamasi.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_show_food.*
 import kotlinx.android.synthetic.main.activity_show_places.*
 
 class show_food : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_show_food)
+
+
 
         val intent = intent
         val yemekIsmiSF = intent.getStringExtra("yemekIsmiValue")
@@ -27,6 +30,8 @@ class show_food : AppCompatActivity() {
 
 
 
+        val dbg = darkbackground()
+        dbg.darkBGforActivity(applicationContext,window,supportActionBar)
 
 
         Picasso.get().load(resimUrlSF).into(showFoodImageID)

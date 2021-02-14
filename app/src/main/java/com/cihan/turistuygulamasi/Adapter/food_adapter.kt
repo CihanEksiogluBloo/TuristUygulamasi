@@ -58,8 +58,18 @@ class food_adapter(var yemeklistesi : ArrayList<Food>) : RecyclerView.Adapter<fo
             intent.putExtra("adresValue",yemeklistesi[position].adres)
             intent.putExtra("kaynakValue",yemeklistesi[position].kaynak)
             intent.putExtra("resimUrlValue",yemeklistesi[position].resimUrl)
+            context.startActivity(intent)
 
-
+        }
+        holder.itemView.foodRCButtonDetailID.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, show_food::class.java)
+            intent.putExtra("yemekIsmiValue",yemeklistesi[position].yemekIsmi)
+            intent.putExtra("BilgiValue",yemeklistesi[position].Bilgi)
+            intent.putExtra("restoranValue",yemeklistesi[position].restoran)
+            intent.putExtra("adresValue",yemeklistesi[position].adres)
+            intent.putExtra("kaynakValue",yemeklistesi[position].kaynak)
+            intent.putExtra("resimUrlValue",yemeklistesi[position].resimUrl)
             context.startActivity(intent)
 
         }

@@ -42,6 +42,7 @@
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:textSize="15sp"
+        android:padding="5dp"
 
 
         android:text="TextView dasffkasl asfifaslşfasişfasşlk" />
@@ -52,7 +53,7 @@
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:textSize="15sp"
-
+        android:padding="5dp"
 
         android:text="Sources" />
 
@@ -74,6 +75,7 @@
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:textSize="15sp"
+        android:padding="5dp"
 
 
         android:text="Restoran Datas" />
@@ -83,6 +85,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Where?"
+        android:backgroundTint="#536DFE"
+        android:drawableEnd="@drawable/nav_icon"
         />
 
 </LinearLayout>

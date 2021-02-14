@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
+import com.cihan.turistuygulamasi.Model.darkbackground
 
 import com.cihan.turistuygulamasi.R
 import com.cihan.turistuygulamasi.ViewModelAndFragments.ShowViewModel
@@ -20,6 +21,11 @@ class show_places : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?)  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_show_places)
+
+        val dbg = darkbackground()
+        dbg.darkBGforActivity(applicationContext,window,supportActionBar)
+
+
 
         val intent = intent
         val gorselshow = intent.getStringExtra("gorselValue")

@@ -49,8 +49,8 @@ class HomeFragment : Fragment() {
 
     }
 
-    override fun onStop() {
-        super.onStop()
+    override fun onDestroy() {
+        super.onDestroy()
         recyclerHomeAdapter.verilistesi.clear()
     }
     fun observeLiveData (){

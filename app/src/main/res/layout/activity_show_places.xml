@@ -86,7 +86,10 @@
         android:layout_gravity="center"
         android:layout_marginRight="5dp"
         android:textSize="11sp"
-        android:text="Show More On Source" />
+        android:text="Show On Source"
+        android:backgroundTint="#FF4081"
+
+        />
         <Button
             android:id="@+id/showButtonID"
             android:layout_width="wrap_content"
@@ -95,7 +98,10 @@
             android:layout_marginLeft="5dp"
 
 
-            android:text="Show On MAPS" />
+            android:text="Show On MAPS"
+            android:backgroundTint="#536DFE"
+            android:drawableEnd="@drawable/nav_icon"
+            />
 
 </LinearLayout>
 

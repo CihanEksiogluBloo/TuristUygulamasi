@@ -52,6 +52,16 @@ class places_adapter(val verilistesi : ArrayList<Place>): RecyclerView.Adapter<p
             context.startActivity(intent)
 
         }
+        holder.itemView.butonViewmoreDetailID.setOnClickListener{
+            val context = holder.itemView.context
+            val intent = Intent(context,show_places::class.java)
+            intent.putExtra("gorselValue",verilistesi[position].gorselUrl)
+            intent.putExtra("mekanAdiValue",verilistesi[position].mekanAdi)
+            intent.putExtra("mekanTarihValue",verilistesi[position].mekanTarih)
+            intent.putExtra("adresValue",verilistesi[position].adres)
+            intent.putExtra("linkValue",verilistesi[position].link)
+            context.startActivity(intent)
+        }
 
     }
 
