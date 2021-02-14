@@ -9,7 +9,7 @@
     <string name="il_adi">il adi</string>
     <string name="name">Name</string>
     <string name="bilgi">Bilgi</string>
-    <string name="show_on_maps">Show on Maps</string>
+    <string name="show_on_maps">on Maps</string>
     <string name="todo">TODO</string>
     <string name="kaynak">kaynak</string>
     <string name="yemek_isimi">yemek isimi</string>
@@ -20,5 +20,13 @@
     <string name="where">where?</string>
     <string name="todo2">TODO</string>
     <string name="what_is_lorem_ipsum_lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_indus_try_s_standard_dummy_text_ever_since_the_1500s_when_a_n_unknown_printer_took_a_galley_of_type_and_scrambled_it_various_versions_have_evolved_over_the_years_sometimes_by_accid">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus try\'s standard dummy text ever since the 1500s, when a n unknown printer took a galley of type and scrambled it Various versions have evolved over the years, sometimes by accid</string>
+    <string name="more_details">Details</string>
+    <string name="show_more_details">Show More DETAILS</string>
+    <string name="why_turkey">Why Turkey?</string>
+    <string name="click_to_view_the_source_video">Click to view the source video.</string>
+    <string name="s_meyra_enet_videolar">Sümeyra Çenet Videoları</string>
+    <string name="lorem">It is a country that connects the continents of Europe, Asia and Africa. Turkey is the center of the world. It can fly to almost everywhere directly from Istanbul. Istanbul connects the Asian and European continents. Istanbul has been the capital of ancient states such as Rome, Byzantine and Ottoman.</string>
+    <string name="lorem2">Istanbul has been the capital of ancient states such as Rome, Byzantine and Ottoman. Probably the currency you use is worth more than the Turkish lira. This value is an inevitable opportunity for tourists. The living standards for tourists are very high. Turkey world\'s 6th most-visited country. In Turkey is a quality meal for $ 3-4 range.</string>
+    <string name="maps">Maps</string>
 
 </resources>

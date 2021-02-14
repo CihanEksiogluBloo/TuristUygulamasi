@@ -48,13 +48,18 @@ class HomeFragment : Fragment() {
 
 
     }
+
+    override fun onStop() {
+        super.onStop()
+        recyclerHomeAdapter.verilistesi.clear()
+    }
     fun observeLiveData (){
-        homeViewModel.datalar.observe(viewLifecycleOwner, Observer {places ->
+        homeViewModel.datalar.observe(viewLifecycleOwner, { places ->
             places?.let {
                 recyclerViewHomeID.visibility = View.VISIBLE
                 recyclerHomeAdapter.listeyiGuncelle(places)
             }
-            homeViewModel.progressBar.observe(viewLifecycleOwner, Observer {yukleniyor ->
+            homeViewModel.progressBar.observe(viewLifecycleOwner, { yukleniyor ->
                 yukleniyor?.let {
                     if (it){
                         recyclerViewHomeID.visibility = View.GONE
@@ -71,7 +76,7 @@ class HomeFragment : Fragment() {
     }
 
     fun dataShow() {
-        viewModel.someChangingVar.observe(viewLifecycleOwner, Observer { newValue->
+        viewModel.someChangingVar.observe(viewLifecycleOwner, { newValue->
             homeViewModel.verileriAl(requireContext().applicationContext,newValue+"Place")
         })
     }

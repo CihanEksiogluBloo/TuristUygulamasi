@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.cihan.turistuygulamasi.Model.Food
 import com.cihan.turistuygulamasi.Model.Place
 import com.cihan.turistuygulamasi.R
 import com.cihan.turistuygulamasi.View.show_places

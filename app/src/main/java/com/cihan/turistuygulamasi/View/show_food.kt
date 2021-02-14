@@ -23,9 +23,6 @@ class show_food : AppCompatActivity() {
         val adresSF = intent.getStringExtra("adresValue")
         val kaynakSF = intent.getStringExtra("kaynakValue")
         val resimUrlSF = intent.getStringExtra("resimUrlValue")
-        println(adresSF)
-        println(restoranSF)
-        println(yemekIsmiSF)
 
 
 

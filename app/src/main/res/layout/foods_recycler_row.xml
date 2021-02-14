@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:id="@+id/foodGlobalLayout"
+    android:layout_marginBottom="10dp"
 
 
     >
@@ -27,7 +29,10 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_gravity="top"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+
+        >
 
 
         <ImageView
@@ -65,7 +70,7 @@
                 android:orientation="vertical"
 
 
-                >
+                tools:ignore="NestedWeights">
 
                 <TextView
 
@@ -87,6 +92,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
+                    android:padding="5dp"
 
                     android:text="@string/buraya_metin_gelecek"
 
@@ -123,6 +129,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
                     android:text="@string/yaziler_burada"
+                    android:padding="5dp"
 
 
                     android:textSize="13sp"
@@ -134,15 +141,23 @@
                     android:layout_height="wrap_content"
                     android:text="@string/where"
                     android:layout_gravity="bottom|center"
+                    android:textColor="@color/white"
+
+
+
 
                     />
 
             </LinearLayout>
 
 
+
         </LinearLayout>
 
+
+
     </LinearLayout>
+
 
     <TextView
         android:id="@+id/kaynakFoodID"
@@ -151,7 +166,19 @@
         android:text="@string/kaynak"
         android:layout_margin="10dp"
         />
+    <Button
+        android:id="@+id/foodRCButtonID2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_more_details"
+        android:background="@drawable/bg_button"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/white"
 
+
+
+
+        />
 
 </LinearLayout>
 

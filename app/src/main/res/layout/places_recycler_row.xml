@@ -7,9 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
-
-    android:background="@color/white">
+    >
 
     <LinearLayout
 
@@ -23,30 +21,32 @@
         android:baselineAligned="false">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/placesimagelayoutid"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_margin="10dp"
 
-            >
+
+            android:layout_weight="2">
 
 
             <ImageView
                 android:id="@+id/placesImageViewID"
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:contentDescription="@string/todo"
+
+
                 android:minWidth="120dp"
-
-
-                app:srcCompat="@drawable/ic_launcher_background"
-                android:contentDescription="@string/todo" />
+                app:srcCompat="@drawable/ic_launcher_background" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2"
 
+            android:layout_weight="2"
             android:orientation="vertical"
 
             >
@@ -58,6 +58,7 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:orientation="vertical"
+                android:padding="7dp"
 
 
                 >
@@ -87,18 +88,44 @@
                     />
             </LinearLayout>
 
-            <Button
-                android:id="@+id/butonViewID"
-
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/bg_button"
-                android:fontFamily="@font/lora_bold"
-                android:text="@string/show_on_maps"
-                android:textColor="@color/white"
-                android:textSize="11sp" />
+                android:orientation="horizontal"
+
+                >
+
+                <Button
+                    android:id="@+id/butonViewmoreDetailID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/bg_button"
+                    android:fontFamily="@font/lora_bold"
+                    android:text="@string/more_details"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/butonViewID"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/bg_button"
+
+                    android:drawableEnd="@drawable/nav_icon"
+                    android:fontFamily="@font/lora_bold"
+                    android:text="@string/maps"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
 
         </LinearLayout>
 

@@ -1,5 +1,8 @@
 package com.cihan.turistuygulamasi.View
 
+import android.content.res.Configuration
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -17,10 +20,18 @@ class SehirSecmeMain : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sehir_secme_main)
 
+        val mode = applicationContext?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)
+        when (mode) {
+            Configuration.UI_MODE_NIGHT_YES -> { supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.parseColor("#FB494B"))) }
+            //Configuration.UI_MODE_NIGHT_NO -> {}
+            //Configuration.UI_MODE_NIGHT_UNDEFINED -> {}
+        }
+
+
 
         sehirekle81()
         val sehirIsimListesi = sehirislemleri.sehirIsimleriListe.sortedBy { it}
-        var layoutManager = LinearLayoutManager(this)
+        val layoutManager = LinearLayoutManager(this)
         recyclerViewID.layoutManager = layoutManager
         recyclerviewAdater = SehirSecmeAdapter(sehirIsimListesi)
         recyclerViewID.adapter = recyclerviewAdater
@@ -34,7 +45,7 @@ class SehirSecmeMain : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        var database = FirebaseFirestore.getInstance()
+        val database = FirebaseFirestore.getInstance()
         database.enableNetwork()
     }
     fun sehirekle81(){

@@ -1,10 +1,14 @@
 package com.cihan.turistuygulamasi.View
 
 
+import android.content.res.Configuration
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.activity.viewModels
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -20,9 +24,18 @@ class yonlendirmeBottomBar : AppCompatActivity() {
 
 
         val intent = intent
-        var collectionPathName = intent.getStringExtra("province")
+        val collectionPathName = intent.getStringExtra("province")
 
         collectionPathName?.let { viewModel.placeSearchFun(it) }
+
+        val mode = applicationContext?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)
+        when (mode) {
+            Configuration.UI_MODE_NIGHT_YES -> { window.statusBarColor = ContextCompat.getColor(this, R.color.black)
+                supportActionBar?.setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(this, R.color.systemDarkGrey)))
+            }
+            //Configuration.UI_MODE_NIGHT_NO -> {}
+            //Configuration.UI_MODE_NIGHT_UNDEFINED -> {}
+        }
 
 
 

@@ -18,11 +18,12 @@
         android:layout_marginTop="444dp"
         android:background="@drawable/rounded_corner"
         android:gravity="center"
+        android:textColor="@color/white"
 
         android:padding="30dp"
 
 
-        android:text="It is a country that connects the continents of Europe, Asia and Africa. Turkey is the center of the world. It can fly to almost everywhere directly from Istanbul. Istanbul connects the Asian and European continents. Istanbul has been the capital of ancient states such as Rome, Byzantine and Ottoman. "
+        android:text="@string/lorem"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,13 +34,14 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
         android:background="@drawable/rounded_corner2"
         android:gravity="center"
         android:padding="30dp"
-        android:text="Istanbul has been the capital of ancient states such as Rome, Byzantine and Ottoman. Probably the currency you use is worth more than the Turkish lira. This value is an inevitable opportunity for tourists. The living standards for tourists are very high. Turkey world's 6th most-visited country. In Turkey is a quality meal for $ 3-4 range. "
+        android:text="@string/lorem2"
 
         android:textAlignment="center"
+        android:textColor="@color/white"
 
 
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
